@@ -1,0 +1,171 @@
+.loadingCur {
+	cursor:progress !important;
+}
+
+body {
+	padding-top: 60px;
+	background-color: #f5f5f5;
+}
+
+.form-signin {
+	max-width: 300px;
+	padding: 19px 29px 29px;
+	margin: 20px auto 20px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+	margin-bottom: 10px;
+}
+
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 15px;
+	padding: 7px 9px;
+}
+
+div.alert strong {
+	text-transform: capitalize;
+}
+
+dl.dl-profile dt:first-letter {
+	text-transform: uppercase;
+}
+
+dl.dl-profile dd {
+	margin-bottom:7px;
+}
+dl.dl-profile dd ul {
+	margin:0;
+	margin-left:25px;
+}
+
+.update-skill,
+.update-photo {
+	margin-top:3px !important;
+	margin-bottom:7px !important;
+}
+
+.update-skill li,
+.update-photo li {
+	position: relative;
+}
+
+.update-skill li .btn,
+.update-photo li .btn {
+	visibility: hidden;
+	position: absolute;
+}
+
+#myProfile .update-skill li:hover .btn,
+#myProfile .update-photo li:hover .btn {
+	visibility: visible;
+	left: 100px;
+}
+
+.visibility-prive {
+	color:#f00;
+}
+.visibility-amis {
+	color:#00c;
+}
+.visibility-public {
+	color:#000;
+}
+
+.show-grid {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.show-grid [class*="span"] {
+	background-color: #ddd;
+	text-align: left;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	min-height: 40px;
+	line-height: 40px;
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.show-grid [class*="span"] .show-grid [class*="span"] {
+	background-color: #eee;
+}
+
+.search h4 {
+	text-indent: 20px;
+}
+
+#myProfile .btn-update-parameter span {
+	cursor: pointer;
+}
+
+.btn-update-parameter form {
+	margin:0;
+}
+
+.btn-small.search-query {
+	line-height:80%;
+	height:80%;
+}
+
+.btn-group-update-parameterV {
+	float: right;
+	font-weight: normal;
+}
+.btn-group-update-parameterV > .btn {
+	width:100px;
+}
+.btn-update-relation:first-letter,
+.btn-update-parameterV:first-letter {
+	text-transform: uppercase;
+}
+.relationsBtn [class*="span"] {
+	background:none !important;
+}
+
+div.search select {
+	margin:0;
+}
+
+div.search_results div.btn-group {
+	float:right;
+}
+
+#messages {
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	right: 50px;
+	z-index: 10; /* over button (z:2) */
+}
+
+.alert {
+	font-size:1.1em;
+	margin-bottom:10px;
+}
+
+.alert-success {
+	border-color: #a6b59a !important;
+}
+
+.alert-danger,
+.alert-error {
+	border-color: #ad9a9c !important;
+}
+
+.alert-info {
+	border-color: #8badb2 !important;
+}

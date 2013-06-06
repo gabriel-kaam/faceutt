@@ -1,0 +1,11 @@
+RewriteEngine  on
+
+Options +MultiViews
+
+RewriteBase /
+ErrorDocument 404 /lost
+ErrorDocument 500 /error
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?q=$1 [L]

@@ -1,0 +1,1 @@
+<?php echo '<dt class="visibility-'.$param->getVisibility().'">'.ServiceRenderHtml::$longNames[$param->getName()].($guest ? '' : showDropDown($param)).'</dt><dd class="btn-update-parameter" data-id="'.$param->getName().'"><span>'.$param->getValue(true).'</span></dd>'; ?>
