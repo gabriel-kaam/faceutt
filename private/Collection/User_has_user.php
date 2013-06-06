@@ -47,20 +47,20 @@ class CollectionUser_has_user extends Collection {
 				'.$k.'
 				`user1`.`id` `a__id`,
 				`user2`.`id` `b__id`
-                                from `user_has_user`
-                                left join `user` `user1` on `user1`.`id`=`user_has_user`.`user_id1`
-                                left join `user` `user2` on `user2`.`id`=`user_has_user`.`user_id2`
-                                having 2 = (
-                                        select count(*)
-                                        from `user_has_user` `foo`
-                                        where (`foo`.`type` & '.ModelUser_has_user::WORK.' ) && ( (
-                                                        `user_has_user`.`user_id1`=`foo`.`user_id1`
-                                                        and `user_has_user`.`user_id2`=`foo`.`user_id2`
-                                                ) OR (
-                                                        `user_has_user`.`user_id1`=`foo`.`user_id2`
-                                                        and `user_has_user`.`user_id2`=`foo`.`user_id1`
-                                                ) )
-                                      )');
+				from `user_has_user`
+				left join `user` `user1` on `user1`.`id`=`user_has_user`.`user_id1`
+				left join `user` `user2` on `user2`.`id`=`user_has_user`.`user_id2`
+				having 2 = (
+					select count(*)
+					from `user_has_user` `foo`
+					where (`foo`.`type` & '.ModelUser_has_user::WORK.' ) && ( (
+							`user_has_user`.`user_id1`=`foo`.`user_id1`
+							and `user_has_user`.`user_id2`=`foo`.`user_id2`
+						) OR (
+							`user_has_user`.`user_id1`=`foo`.`user_id2`
+							and `user_has_user`.`user_id2`=`foo`.`user_id1`
+						) )
+				      )');
 		$sth->execute();
 		
 		$pairs = array();
